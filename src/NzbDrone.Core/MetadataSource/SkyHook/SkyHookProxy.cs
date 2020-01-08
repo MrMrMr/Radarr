@@ -495,7 +495,7 @@ namespace NzbDrone.Core.MetadataSource.SkyHook
                     .SetSegment("secondaryRoute", "")
                     .AddQueryParam("query", searchTerm)
                     .AddQueryParam("year", yearTerm)
-                    .AddQueryParam("include_adult", false)
+                    .AddQueryParam("include_adult", true)
                     .Build();
 
                 request.AllowAutoRedirect = true;
